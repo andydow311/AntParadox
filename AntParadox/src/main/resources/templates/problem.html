@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>The Ant Paradox</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>The problem</h1>
+<p th:text="'An ant starts to crawl along a taut rubber rope ' + ${rope_length} + ' cm long at a speed of ' + ${ant_speed} + 'cm per second (relative to the rubber it is crawling on). At the same time, the rope starts to stretch uniformly at a constant rate of ' + ${rope_increase} + ' cm per second. Will the ant ever reach the end of the rope?'" />
+<b th:text="'yes in ' + ${seconds} + ' sconds'" />
+</body>
+</html>
